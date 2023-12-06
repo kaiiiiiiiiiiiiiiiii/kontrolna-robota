@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main() {
+    int A, B, C;
+    
+    // Ввід значень A, B, C
+    std::cout << "Введіть значення A: ";
+    std::cin >> A;
+    std::cout << "Введіть значення B: ";
+    std::cin >> B;
+    std::cout << "Введіть значення C: ";
+    std::cin >> C;
+
+    // Виведення парних чисел у зворотному порядку
+    for (int i = B; i >= A; --i) {
+        if (i % 2 == 0 && i < C) {
+            std::cout << i << " ";
+        }
+    }
+
+    return 0;
+}
